@@ -1,5 +1,5 @@
 ```
-psc.Algoritmo Ventasycomisiones_promedio
+Algoritmo Ventasycomisiones_promedio
 	Imprimir "Ingrese el numero total de ventas: "
 	Leer num_ventas
 	ventacompleta = 0
