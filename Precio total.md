@@ -1,22 +1,17 @@
 ```
-Algoritmo numeropar_oimpar
-	Repetir
-		Escribir "Escribe un numero entre 1 y 50"
-		Leer cifra
-		Si cifra < 1 | cifra > 50 Entonces
-			Imprimir "Numero invalido"
-		FinSi
-	Mientras Que cifra < 1 | cifra > 50
+Funcion monto <- CostoTotal(precio, IVA)
 	
-	par = cifra % 2 = 0 
-	
-	Para contador=1 Hasta cifra Con Paso 1 Hacer
-		Si contador % 2 = 0 & par Entonces
-			Imprimir contador
-		FinSi
-		Si contador % 2 = 1 & ~(par) Entonces
-			Imprimir contador
-		FinSi
-	FinPara
+	Definir monto Como Real;
+	Imprimir "Ingrese cantidad"
+	Leer cantidad
+	Si cantidad > 3000 Entonces
+		monto = (cantidad + (cantidad/100* IVA) ) / 100*90
+	SiNo
+		monto = (cantidad + (cantidad/100*IVA) )
+	FinSi
+Fin Funcion
+
+Algoritmo Preciototal
+	Imprimir CostoTotal(5000,21)
 FinAlgoritmo
 ```
