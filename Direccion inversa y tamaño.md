@@ -1,7 +1,7 @@
 ```
 	Funcion resultado <- Direccion_Inversay_Tamano (string)
 		Definir resultado Como Caracter;
-		resultado = "";
+		resultado = " ";
 		Para contar = Longitud(string) Hasta 0 Con Paso -1 Hacer
 			carta = Subcadena(string,contar,contar);
 			Si carta = Mayusculas(carta) Entonces
